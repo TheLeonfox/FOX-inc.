@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     outline: none;
-    
+    box-sizing: border-box;
 }
 html{height: 100%}
 body{
     width: 100%;
     font-family: Verdana,sans-serif ;
     line-height: 135%;
-    background-color: #16446a;
+    background-color: #fff;
     
 }
 img{
@@ -45,11 +45,10 @@ header{
     float: left;
     padding: 1%;
     margin-bottom: 20px;
+    border-bottom: 1px solid silver;
     
 }
-header #logo img{
-    top: 1000px;
-}
+
 header #logo{
     width: 40%;
     float: left;
@@ -66,27 +65,111 @@ header #menuhead{
 header #menuhead a{
     margin-right: 10px;
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    
 }
 header #menuhead a:hover{
-    text-decoration: underline;
+    background-color: #fff;
+    color: #808080;
+    border-radius: 8px;
+    
+}
+/*черная шапка*/
+header{
+    width: 98%;
+    float: left;
+    padding: 1%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid silver;
+    
+}
+
+header #logo_1{
+    width: 40%;
+    float: left;
+    
+    
+}
+
+header #menuhead_1{
+    float: right;
+    
+    
+}
+
+header #menuhead_1 a{
+    margin-right: 10px;
+    color: #000;
+    font-size: 1.2em;
+
+    
+}
+header #menuhead_1 a:hover{
+    color: #fff;
+    border-radius: 8px;
+    
+    
+}
+header #menuhead_1 a img{
+    height: 32px;
+    width: 32px;
+}
+/*about.php*/
+#about_main{
+    padding: 100px;
+    
+}
+#about_main #container_2{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#about_main #container_2 #h1_2{
+    font-size: 2.2em;
+    text-align: center;
+    margin: 10%;
+    margin-bottom: 5%;
     color: #fff;
 }
+#about_main #container_2 #p2{
+    float: left;
+    line-height: 1.5;
+    font-size: 1.5em;
+    color: #000;
+     background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+   
+}
+#about_main #container_2 #p3{
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    line-height: 1.5;
+    font-size: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: #000;
+    
+   
+}
 /*Стили для Footer*/
-footer{
+footer {
     width: 98%;
     float: left;
     padding: 1%;
     margin-top: 10px;
     color: #000;
-    background-color: #fff;
+    border-top: 1px solid silver;
 }
 footer #social {
     float: left;
     width: 50%;
         
 }
-footer #social img{
+footer #social img {
     width:30px;
     height: 30px;
     float: left;
@@ -100,3 +183,392 @@ footer #rights {
     font-size: 1.1em;
         
 }
+/*Стили для главной страницы*/
+#firstpage{
+    position: relative;
+    width: 100%;
+    height: 900px;
+        
+                min-height: 100%;
+                display: block;
+                
+                background: url(/img/background_2.jpg);
+    background-repeat: no-repeat;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+    
+}
+#firstpage #maininfo {
+    width: 100%;
+    float: left;
+   
+    
+}
+#firstpage #maininfo #slogan {
+    width: 100%;
+    float: left;
+    line-height: 1.1;
+    color: #eee;
+    font-size: 2.2em;
+    font-family: 'Segoe Print',sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+}
+#firstpage #maininfo #promo {
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    margin: 5%;
+    width: 90%;
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+#firstpage #maininfo #next {
+    margin-top: 10%;
+    text-align: center;
+}
+#firstpage #maininfo #next a {
+    color: #000;
+    background-color: #eee;
+    border-radius: 18px;
+    
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 2%;
+    
+    
+}
+#firstpage #maininfo #next a:hover {
+    background-color: #000;
+    color: #eee;
+}
+/*123*/
+.getstart{
+    width: 100%;
+    background-color: #808080;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 100px;
+    text-align: center;
+    
+}
+.getstart .content_1{
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: center;
+}
+.getstart .content_1 .content_2{
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.getstart .content_1 .content_2 .h21{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+}
+.getstart .content_1 .content_2 .hr1{
+        border-width: 3px;
+        
+    max-width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #eee;
+    text-align: center;
+    margin-left: 48%;
+    margin-right: 48%;
+}
+.getstart .content_1 .content_2 .p1{
+        font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.getstart .content_1 .content_2   .a1 {
+        padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    text-align: center;
+    color: #000;
+        background: #eee;
+        border-radius: 10px;
+        margin-top: 10%;
+            
+}
+.getstart .content_1 .content_2 .a1:hover{
+     
+        background: #eeecec;
+}
+/*Иконки с подписями*/
+.services {
+    padding: 100px;
+    
+}
+.services .text_services{
+        padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.services .text_services .container{
+    margin-right: -15px;
+    margin-left: -15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+.services .text_services .container .text_contatiner{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    
+}
+.services .text_services .container .text_contatiner .h2_services{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    text-align: center;
+}
+.services .text_services .container .text_contatiner .hr_services{
+    border-color: #000;
+    border-width: 3px;
+    max-width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #000;
+    border-top-style: solid;
+    height: 0;
+    text-align: center;
+    margin-left: 48%;
+    margin-right: 48%;
+            
+}
+.services .blocks_services{
+        padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+    
+}
+.services .blocks_services .blocks{
+    margin-right: -15px;
+    margin-left: -15px;
+    
+}
+.services .blocks_services .blocks .block_1{
+    width: 50%;
+    float: left;
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    
+}
+
+.services .blocks_services .blocks .block_2{
+    width: 50%;
+    float: left;
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+.services .blocks_services .blocks .block_3{
+    width: 50%;
+    float: left;
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+.services .blocks_services .blocks .block_4{
+    width: 50%;
+    float: left;
+        position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+.services .blocks_services .blocks .block_1 .box_services,.services .blocks_services .blocks .block_2 .box_services,.services .blocks_services .blocks .block_3 .box_services,.services .blocks_services .blocks .block_4 .box_services{
+        margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    text-align: center;
+    
+}
+.services .blocks_services .blocks .block_1 .box_services .img_1,.services .blocks_services .blocks .block_2 .box_services .img_1,.services .blocks_services .blocks .block_3 .box_services .img_1,.services .blocks_services .blocks .block_4 .box_services .img_1{
+    text-align: center;
+    height: 64px;
+    width: 64px;
+}
+.services .blocks_services .blocks .block_1 .box_services .h3_1,.services .blocks_services .blocks .block_2 .box_services .h3_1,.services .blocks_services .blocks .block_3 .box_services .h3_1,.services .blocks_services .blocks .block_4 .box_services .h3_1{
+        font-size: 24px;
+        margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    text-align: center;
+    
+}
+.services .blocks_services .blocks .block_1 .box_services .p,.services .blocks_services .blocks .block_2 .box_services .p,.services .blocks_services .blocks .block_3 .box_services .p,.services .blocks_services .blocks .block_4 .box_services .p{
+    margin-bottom: 0;
+        color: #777;
+        font-size: 16px;
+    line-height: 1.5;
+        margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    
+}
+
+/*профиль*/
+.profile{
+    padding-top: 5%;
+   
+       
+      
+}
+.profile .container{
+   height: inherit;
+}
+.profile .container .avatar{
+    text-align:center;
+  
+     
+}
+.profile .container .avatar .img{
+   
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2%;
+}
+.profile .container .avatar p{
+
+    font-size: 2.5em;
+}
+.profile .container .hr{
+    border-width: 5px;      
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    border-top: 2px solid #a30a0a;
+    text-align: center;
+    
+}
+.profile .container .maininfo{
+    width: 90%;
+    margin-left: 5%;
+  
+}
+.profile .container .maininfo .standart {
+    width: 45%;
+    float: left;
+    margin-right:10% ;
+}
+.profile .container .maininfo .standart p{
+    color: #000;
+    margin: 10px;
+    text-align: center;
+    
+    
+    
+}
+.profile .container .maininfo .about{
+    width: 45%;
+    color:  #000;
+    float: left;
+    margin-top: 10px;
+    word-break: break-all
+}
+.profile .container .maininfo .hr{
+    
+}
+.profile .container .blog{
+    width: 100%;
+}
+
+
+
+/*Обратная связь*/
+.feedback{
+    width: 100%;
+    padding: 100px;
+}
+.feedback .container{
+    width: 90%;
+    margin: 5%;
+}
+.feedback .container input{
+    width: 40%;
+    margin-left: 30%;
+    float: left;
+    border-right: 5px;
+    border: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.feedback .container input:focus,.feedback .container #message:focus{
+    border: 2px solid #c10606;
+}
+.feedback .container #name{
+    
+}
+.feedback .container #email{
+    
+}
+.feedback .container #subject{
+    
+}
+.feedback .container #message{
+     width: 40%;
+    margin-left: 30%;
+    float: left;
+    border-right: 5px;
+    border: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    resize: none;
+    height: 150px;
+}
+.feedback .container #done{
+    cursor: pointer;
+    margin-bottom: 20%;
+}
+ .feedback .container #messageShow{
+    font-size: 1.2em;
+    float: left;
+    color: #c10606;
+    width: 100%;
+    text-align: center;
+   
+}  
