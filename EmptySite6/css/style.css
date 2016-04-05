@@ -536,19 +536,19 @@ footer #rights {
     margin-bottom: 10px;
     font-size: 1.2em;
 }
-.feedback .container input:focus,.feedback .container #message:focus{
+.feedback .container input:focus,.feedback .container .message:focus{
     border: 2px solid #c10606;
 }
-.feedback .container #name{
+.feedback .container .name{
     
 }
-.feedback .container #email{
+.feedback .container .email{
     
 }
-.feedback .container #subject{
+.feedback .container .subject{
     
 }
-.feedback .container #message{
+.feedback .container .message{
      width: 40%;
     margin-left: 30%;
     float: left;
@@ -560,7 +560,7 @@ footer #rights {
     resize: none;
     height: 150px;
 }
-.feedback .container #done{
+.feedback .container .done{
     cursor: pointer;
     margin-bottom: 20%;
 }

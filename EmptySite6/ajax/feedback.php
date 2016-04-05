@@ -8,11 +8,11 @@
         exit;
     }
 //отправка 
-$subject = ""=?utf-8?B?.base64_encode($subject)."?="";
-$headers = "From:$email\r\nReply-to:$email\r\nContent-type:text/html;charset=utf-8\r\n";
-if(mail("LeonFoxDev@outlook.com,$ubject,$message,$"))
+$subject = "=?utf-8?B?".base64_encode($subject)."?=";
+$headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
+if(mail("LeonFoxDev@outlook.com",$ubject, $message, $headers"))
     echo "Сообщение отправлено";
     else
-    echo "Сообщение не отправлено"
+    echo "Сообщение не отправлено";
 ?>
 

@@ -7,15 +7,15 @@
     <head>
         <title>Обратная связь</title>
     <?php require_once"blocks/head.php"?>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".done").click(function () {
                      $('#messageShow').hide();
-                    var name = $("#name").val();
-                    var email = $("#email").val();
-                    var subject = $("#subject").val();
-                    var message = $("#message").val();
+                    var name = $(".name").val();
+                    var email = $(".email").val();
+                    var subject = $(".subject").val();
+                    var message = $(".message").val();
                     var fail = "";
                     if (name.length < 3) fail = "Имя не меньше 3 символов";
                     else if (email.split('@').length - 1 == 0 || email.split('.').length - 1 == 0)
@@ -35,9 +35,9 @@
                         cache: false,
                         data:{'name':name,'email':email,'subject':subject,'message':message},
                         dataType:'html',
-                        success:function(data){
-                            if(data =='Сообщение отправлено') {
-                                $('#messageShow').html (data + "<div clas='clear')><br></div>");
+                        success: function (data) {
+                            if(data == 'Сообщение отправлено' || data == 'Сообщение не отправлено' ) {
+                                $('#messageShow').html (data + "<div class='clear'><br></div>");
                                 $('#messageShow').show();
                             } 
                          
@@ -63,12 +63,12 @@
         <?php require_once"blocks/header.php"?>
         <section class="feedback">
         <div class="container">
-            <input type="text" placeholder="Имя" id="name" name="name"><br />
-            <input type="text" placeholder="Email" id="email" name="Email"><br />
-            <input type="text" placeholder="Тема сообщения" id="subject" name="subject"><br />
-            <textarea name="message" id="message" placeholder="Введите сюда ваше сообщение"></textarea><br />
+            <input type="text" placeholder="Имя" class="name" name="name"><br />
+            <input type="text" placeholder="Email" class="email" name="Email"><br />
+            <input type="text" placeholder="Тема сообщения" class="subject" name="subject"><br />
+            <textarea name="message" class="message" placeholder="Введите сюда ваше сообщение"></textarea><br />
             <div id="messageShow"></div>
-            <input type="button" name="done" id="done" value="Отправить">
+            <input type="button" name="done" class="done" value="Отправить">
         </div>
         
         </section>
