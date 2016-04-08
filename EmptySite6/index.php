@@ -75,6 +75,7 @@
                         <p class="p_1">Сайт находится в облаке MicrosoftAzure</p>
                     </div>
                 </div>
+				
                 </div>
             </div>
         </section>
